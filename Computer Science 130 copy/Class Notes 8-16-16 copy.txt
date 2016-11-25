@@ -1,0 +1,214 @@
+>>>print(‘Class Work Chapter 2’)
+>>>print(‘Ryan Tolentino’)
+>>>print(‘8/29/16’)
+
+Use the Python 2.7 Shell window to repeat all exercises from the lectures discussing Chapter 2. Store the content of all Shell windows in one text file with the name “Class Work Chapter 2” appended to your last name (e.g. “Johnson_Class Work Chapter 2”) and submit it to the Canvas. Start with print statement to display
+
+(a) the name of the assignment i.e. “Class Work Chapter 2”
+
+(b) the name of the programmer (student)
+
+(c) the date when the assignment was uploaded
+
+
+
+List class
+Creating a empty list
+
+>>> x = list()
+>>> x = []
+
+Creating a non-empty list 
+
+>>> listcolors['green','blue','yellow']
+
+
+>>> groceries.append('bread')
+groceries is the object...
+append is a method in the class. It is a mutator 
+'bread' is a parameter 
+>>> groceries
+output: ['bread']
+>>> x = list()
+>>> x = []
+>>> listcolors = ['red','oraange','yellow','green','blue']
+>>> groceries = [ ]
+
+>>> groceries
+
+[]
+>>> groceries.append('bread')
+
+>>> groceries
+
+['bread']
+>>> waitlist = list()
+
+>>> waitlist.append('Kim')
+
+>>> waitlist.append('Eric')
+
+>>> waitlist.append('Andrew')
+
+>>> waitlist
+
+['Kim', 'Eric', 'Andrew']
+
+python starts counting from 0
+
+
+Count: a method that returns a value 
+grocereis.count('bread')
+
+
+### 8-18-16
+
+Whats the difference betweeen append and extend
+
+extened uses multiple vs append is only one...
+
+>>> waitlist = list() 
+>>> waitlist.append('Kim') 
+>>> waitlist.append('Eric') 
+>>> waitlist.append('Andrew') 
+>>> waitlist ['Kim', 'Eric', 'Andrew'] 
+>>> waitlist.insert(1, 'Donald') 
+>>> waitlist ['Kim', 'Donald', 'Eric', 'Andrew']
+>>> waitlist = ['Kim', 'Donald', 'Eric', 'Andrew']
+>>> waitlist.remove('Eric') 
+>>> waitlist ['Kim', 'Donald', 'Andrew'] 
+>>> #removes 'Eric' from the list.
+>>> waitlist ['Rich', 'Elliot', 'Alan', 'Karl', 'Alan', 'William'] 
+>>> waitlist.remove('Alan') 
+>>> waitlist ['Rich', 'Elliot', 'Karl', 'Alan', 'William'] 
+>>> #removes first occurrence of 'Alan'
+>>> groceries = ['bread','milk','cheese','bread'] 
+>>> groceries.count('bread') 
+2 
+>>> groceries.count('milk') 
+1 
+>>> groceries.count('apple') 
+0 
+>>> #can assign return value to an identifier 
+>>> numLoaves = groceries.count('bread')
+ >>> print numloaves 
+2
+
+>>> favoriteColors =['red','green','purple','blue'] 
+>>> #making a copy of a list 
+>>> primaryColors = list(favoriteColors) 
+>>> primaryColors.remove('purple') 
+>>> favoriteColors 
+['red','green','purple','blue'] 
+>>> primaryColors 
+['red','green','blue']
+
+
+>>> range(5)
+ [0, 1, 2, 3, 4]
+ >>> range(23, 28) 
+[23, 24, 25, 26, 27] 
+>>> range(100, 130, 4) 
+[100, 104, 108, 112, 116, 120, 124, 128] 
+>>> range(8, 3, -1)
+ [8, 7, 6, 5, 4]
+
+>>> groceries = ['cereal', 'milk', 'apple']
+ >>> groceries[1] = 'soy' 
+>>> groceries ['cereal', 'soy', 'apple']
+
+>>> contestants=['Gomes','Kiogora','Tergat', 'Yego']
+>>> contestants[-1] '
+Yego' 
+>>> contestants[-4] 
+'Gomes' 
+>>> contestants[-2] 
+'Tergat'
+
+>>> groceries =['salsa','pretzels','pizza','soda']
+ >>> groceries.pop() 'soda' 
+>>> groceries
+ ['salsa','pretzels','pizza']
+
+>>> waitlist = ['Kim', 'Donald', 'Grace','Andrew']
+ >>> toBeSeated = waitlist.pop(0)
+ >>> waitlist ['Donald', 'Grace', 'Andrew'] 
+>>> toBeSeated 
+'Kim'
+
+>>> groceries = ['cereal', 'milk'] 
+>>> produce = ['apple', 'orange', 'grapes'] 
+>>> groceries.extend(produce) 
+>>> groceries ['cereal', 'milk', 'apple', 'orange', 'grapes'] 
+>>> produce ['apple', 'orange', 'grapes']
+
+>>> groceries = ['cereal', 'milk', 'apple', 'orange', 'grapes']
+>>> groceries.reverse() 
+>>> groceries
+['grapes', 'orange', 'apple', 'milk', 'cereal'] 
+>>> groceries.sort() 
+['apple', 'cereal', 'grapes', 'milk', 'orange']
+
+>>> waitlist = ['Kim', 'Donald', 'Grace', 'Andrew']
+>>> len(waitlist) 
+4 
+>>> 'Michael' in waitlist 
+False 
+>>> 'Grace' in waitlist True
+
+>>> waitlist = ['Kim', 'Donald', 'Grace', 'Andrew']
+>>> waitlist.index('Donald') 
+1
+
+>>> waitlist = ['Rich','Elliot','Alan','Karl','Alan'] 
+>>> waitlist.index('Alan') 
+2 
+
+>>> waitlist.index('Alan', 3)
+ 4
+
+>>> waitlist = ['Rich','Elliot','Alan','Karl','Alan'] 
+>>> first = waitlist.index('Alan') >
+>> second=waitlist.index('Alan',first + 1) 
+4
+>>> monthly = [ 0] * 12
+ >>> monthly [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
+>>> produce = ['apple', 'orange', 'broccoli'] 
+>>> drygoods = ['cereal', 'bread'] 
+>>> groceries = produce + drygoods 
+>>> groceries 
+['apple', 'orange', 'broccoli', 'cereal', 'bread']
+
+>>> greeting = 'Hello' 
+>>> len(greeting) 
+5 
+>>> greeting[1] 
+'e'
+
+>>> formal = 'Hello. How are you?'
+>>> informal = formal.lower( ) 
+>>> screaming = formal.upper( ) 
+>>> formal 
+'Hello, How are you?' 
+>>> informal 
+'hello, how are you?' 
+>>> screaming 
+'HELLO, HOW ARE YOU?'
+
+
+
+>>> request = 'eggs and milk and apples' 
+>>> request.split( ) 
+['eggs', 'and', 'milk', 'and', 'apples'] 
+>>> request.split('and') 
+['eggs ', ' milk ', ' apples'] 
+>>> request.split(' and ') 
+['eggs', 'milk', 'apples']
+
+>>> guests = ['John', 'Mary', 'Amy', 'Frank']
+>>> ' and '.join(guests) 
+'John and Mary and Amy and Frank'
+
+>>>skyBlue = (136, 207, 236)
+
+>>>months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun''Jul', 'Aug', 'Sep', 'Oct', 'Nov','Dec']

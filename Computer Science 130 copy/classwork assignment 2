@@ -1,0 +1,24 @@
+>>> x = list()
+>>> x = []
+>>> listcolors = ['red','oraange','yellow','green','blue']
+>>> groceries = [ ]
+
+>>> groceries
+
+[]
+>>> groceries.append('bread')
+
+>>> groceries
+
+['bread']
+>>> waitlist = list()
+
+>>> waitlist.append('Kim')
+
+>>> waitlist.append('Eric')
+
+>>> waitlist.append('Andrew')
+
+>>> waitlist
+
+['Kim', 'Eric', 'Andrew']
